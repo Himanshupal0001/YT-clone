@@ -1,70 +1,57 @@
-# Getting Started with Create React App
+![Yt-banner](https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto:best/f_auto/dpr_2.0/ncom/en_US/games/switch/y/youtube-switch/hero)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# YouTube-Clone
+This application is built with REACT.JS and allow users to watch videos. It uses the YouTube API to show videos and provide an experience similar to original YouTube. This application also come with features like  highly optimize search feature using denouncing and network caching, code splitting, optimize component for scalability, API pagination & lazy loading, highly scalable optimized live chat simulation for demonstration, similar comment design to YouTube with emoji picker,  centered state management using react-redux. responsive design.
 
-## Available Scripts
+# 💻 Demo
+A live demo of the application is available at: 
+👉 https://yt-clone-himanshu-prod.vercel.app/
 
-In the project directory, you can run:
+# ⚙ Tech Stack
+- React.js
+- Redux Toolkit
+- Tailwind CSS
 
-### `npm start`
+# 🚀 Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+##  YouTube API Integration
+This application uses the YouTube API to show videos and provide a user experience similar to YouTube. The integration with the YouTube API ensures that the application has access to a vast library of videos, making it a comprehensive video streaming platform.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Optimized Search feature with Debouncing and Caching
+This application comes with an optimized search feature that uses debouncing and caching to reduce the number of API requests. The search feature is highly responsive and provides quick results to users, making it easier to find specific videos.
 
-### `npm test`
+## Code Splitting
+Live feature is splitted from the main js bundle since it is just a simulation of the feature. Since not all checkout this feature it is wise to keep the code split from main js bundle using lazy() import and <Suspense><Suspense/> features of react. It will reduce the overall size of the js bundle and optimize network performance, thus load time will reduce. 
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Infinite Scroll
+This application demonstrate two approaches  infinite scrolling. One is load data on scroll and second is on click load. Lazy loading/Infinite scrolling is an advance feature given in most social media apps for better user experience and to engage user for longer time period. 
 
-### `npm run build`
+## Live chat simulation
+This application demonstrate optimized live chatting feature using **API POLLONG** which keep in check DOM does not bloat up which is key point of scalable app. It also allow the current user to comment in the live chat.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+# 📷 Screenshot
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+<a href="https://ibb.co/W6bFbPr"><img src="https://i.ibb.co/vH7m7QN/Capture.png" alt="Capture" border="0"></a>
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+#  🍕 Getting Started
 
-### `npm run eject`
+To get started with the app, follow below steps
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+1. Clone the repository : git clone git@github.com:Himanshupal0001/YT-clone.git
+2. Install the dependencies : npm i or npm install
+3. Create .env file in root folder and paste your YouTube API key under same variable name **REACT_APP_YOUTUBE_KEY** . For example                                                                       
+```
+REACT_APP_YOUTUBE_KEY = YOUR_KEY
+```
+4. Start the application : npm start
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+# 🤝 Contribution
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Contributions are always welcome!  
+If you want to contribute, you can follow these steps:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+-   Fork the repository.
+-   Create a new branch with a descriptive name for your feature or bug fix.
+-   Write your code and commit your changes.
+-   Push your changes to your forked repository.
+-   Submit a pull request to the original repository
